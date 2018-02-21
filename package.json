@@ -1,29 +1,25 @@
 {
   "name": "accept",
-  "description": "HTTP Accept-* headers parsing",
-  "version": "3.0.2",
-  "repository": "git://github.com/hapijs/accept",
+  "description": "HTTP Accept header parsing",
+  "version": "0.0.1",
+  "repository": "git://github.com/bburhans/accept",
   "main": "lib/index.js",
   "keywords": [
     "HTTP",
     "header",
-    "accept",
-    "accept-encoding"
+    "accept"
   ],
   "engines": {
     "node": ">=8.9.0"
   },
-  "dependencies": {
-    "boom": "7.x.x",
-    "hoek": "5.x.x"
-  },
+  "dependencies": {},
   "devDependencies": {
     "code": "5.x.x",
     "lab": "15.x.x"
   },
   "scripts": {
-    "test": "lab -a code -t 100 -L",
-    "test-cov-html": "lab -a code -r html -o coverage.html"
+    "test": "lab -a code -t 100 -L test/mediatype.js",
+    "test-cov-html": "lab -a code -r html -o coverage.html test/mediatype.js"
   },
   "license": "BSD-3-Clause"
 }
